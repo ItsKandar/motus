@@ -709,6 +709,6 @@ mots_fr = [
 "flandre",
 "artisant",
 "jambon",
-"Canoe",
+"canoe",
 "titanic"
 ]

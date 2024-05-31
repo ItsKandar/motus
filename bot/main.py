@@ -55,6 +55,9 @@ def create_db():
     if not column_exists(c, "servers", "correct_letters"):
         c.execute("ALTER TABLE servers ADD COLUMN correct_letters TEXT")
 
+    if not column_exists(c, "servers", "secret"):
+        c.execute("ALTER TABLE servers ADD COLUMN secret BIT default 0")
+
     conn.commit()
 
     # Créer les collums d'users si elles n'existent pas déjà
